@@ -1,10 +1,15 @@
 from rdflib import Graph
 
-g = Graph()
-g.parse("ch_linkedJazz.nt", format="nt")
+ch = Graph()
+ch.parse("ch_linkedJazz.nt", format="nt")
 
-len(g) # prints 2
+lj = Graph()
+lj.parse("lj_data.nt", format="nt")
+
+len(ch) # prints 2
 
 import pprint
-for s,p,o in g:
+for s,p,o in ch:
     print(s)
+    for a,b,c in lj:
+    	print(a)
