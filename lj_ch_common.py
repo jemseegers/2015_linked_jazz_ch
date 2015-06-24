@@ -10,6 +10,8 @@ len(ch) # prints 2
 
 import pprint
 for s,p,o in ch:
-    print(s)
+    #print(s)
     for a,b,c in lj:
-    	print(a)
+    	#print(a)
+    	if str(o) == str(c):
+    		print(c)
