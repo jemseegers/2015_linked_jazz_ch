@@ -18,10 +18,9 @@ for s,p,o in ch:
     	#if o == a:
     		#print(a)
 
-		if o not in matches :
+		if o not in matches:
 			matches[o] = o
 
-		if a not in matches :
+		if a not in matches:
 			matches[a] = a
-
 				print matches
