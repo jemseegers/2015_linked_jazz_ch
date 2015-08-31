@@ -18,4 +18,17 @@ for s,p,o in ch:
    			
    			if o not in matches:
    				matches.append(o)
-print(matches)
+#print(len(matches))
+
+slist = []
+
+for s,p,o in ch:
+	if o in matches:
+		slist.append(s)
+
+g = Graph()
+
+for s,p,o in ch:
+	if s in slist:
+		g.add((s,p,o))
+g.serialize("ch_lj_matches.nt", format='nt')
