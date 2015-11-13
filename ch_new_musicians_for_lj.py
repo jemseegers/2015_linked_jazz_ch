@@ -20,6 +20,8 @@ for s,p,o in ch:
 					newmusicians.append(o)
 					#print(newmusicians)
 
+import json
+
 with open ("newbies_to_lj.json", "w") as g:
 	g.write(json.dumps(newmusicians, indent=4))
 
